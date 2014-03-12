@@ -38,7 +38,8 @@ int main(int argc, const char * argv[])
 void add_token_to_list(Token *list, Token *new_token)
 {
     // Add new_token to the list knowing that list is a linked list.
-    
+    list -> next = new_token;
+   // Set new_token -> next?
 }
 void quit_scanner(FILE *src_file, Token *list)
 {
